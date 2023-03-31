@@ -18,16 +18,7 @@ export default async function SearchPage({ params }) {
         <h1 className="text-center pt-6">No results found</h1>
       )}
 
-      {results && (
-        <>
-          {/* <div className="text-center ">
-            <button>Prev</button>
-            <h2>{pageNum}</h2>
-            <button onClick={pageNext}>Next</button>
-          </div> */}
-          <Results results={results} />
-        </>
-      )}
+      {results && <Results results={results} />}
     </div>
   );
 }
